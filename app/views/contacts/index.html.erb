@@ -1,0 +1,14 @@
+<table>
+	<tr>
+		<th>Name</th>
+		<th>Email</th>
+		<th>Enabled</th>
+	</tr>
+	<% @contacts.each do |contact| %>
+		<tr>
+			<td><%= contact.name %></td>
+			<td><%= contact.email_address %></td>
+			<td><%= contact.enabled %></td>
+		</tr>
+	<% end %>
+</table>
